@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Header Button</title>
   </head>
@@ -17,20 +20,24 @@
       </div>
       <div class="header">
         <div class="menu-container">
-          <p class="header-button">Shop</p>
-          <p class="header-button">Story</p>
+          <a class="header-button">Shop</a>
+          <a href="/" >Story</a>
         </div>
         <div class="logo">
-          <h1>DECEM</h1>
+          <a href="#">DECEM</a>
         </div>
-        <div class="cart">
+        <div class="shopping">
+          <img src="image/shopping.svg">
+          <span class="quantity">0</span>
+      </div>
+        <!-- <div class="cart">
           <p>Cart</p>
-        </div>
+        </div> -->
       </div>
       <div class="body-container">
         <div class="img-container">
           <div class="img-border">
-            <img
+            <img id="image"
               src="https://decemdrinks.com/cdn/shop/products/SpicedBlend_Serve_1024x1024.png?v=1659602678"
               alt="header image"
             />
@@ -50,8 +57,8 @@
                 </ul>
               </nav>
               <h4 class="product-form-title">
-                <strong> Spiced Blend </strong> <em></em> <br />
-                <em>made with</em> Caribbean Rum
+                <strong style="font-family: Lato;"> Spiced Blend </strong> <em></em> <br />
+                <em style="font-family: Dancing Script">made with</em> <em style="font-family: Baskerville ">Caribbean Rum</em> 
               </h4>
               <div class="grid-x product-details f-text">
                 <div class="cell small-6">
@@ -69,6 +76,7 @@
                 class="id"
               />
               <button
+              id="addCart"
                 data-item="Spiced Blend"
                 type="submit"
                 class="cta f-text product-buy add-to-cart add-to-cart-button"
@@ -76,53 +84,82 @@
                 £29.95 — Add to Bag
               </button>
               <div class="single-product__free-delivery">FREE UK DELIVERY</div>
-              <div class="">
-                <div class="accordion">
-                  <div class="contentBx">
-                      <div class="label"><strong>Description</strong></div>
-                      <div class="content">
-                          <p>Blending a duo of light and white Caribbean rums from
-                              Martinique and Dominican Republic as&nbsp;the smooth
-                              base. Spices are then added and the mix is allowed to
-                              steep for 2 days to draw out all of the flavour before
-                              being filtered and masterfully blended with natural
-                              distillates to 10%ABV. The result is a buttery,
-                              caramel-forward, savoury and spicy light spirit with a
-                              big impact both on the nose and the taste buds..</p>
-                      </div>
-                  </div>
-                  <div class="contentBx">
-                      <div class="label"><strong>Taste</strong></div>
-                      <div class="content">
-                          <p>Deep bonfire toffee,&nbsp;warming savoury spice, rounded
-                              honey sweetness, buttery caramel throughout with a hint of
-                              tropical fruit.</p>
-                      </div>
-                  </div>
-                  <div class="contentBx">
-                      <div class="label"><strong>Serve</strong></div>
-                      <div class="content">
-                          <p>LSimply serve 50ml chilled over ice with 150ml premium
-                              Ginger Ale and a lime wedge. 2.3% ABV.</p>
-                      </div>
-                  </div>
-              </div>
-              
-                
-              </div>
+              <div class="product-accordions f-text"></div>
+              <div class="accordion">
+                <div class="contentBx">
+                    <div class="label"><strong>Description</strong></div>
+                    <div class="content">
+                        <p>Blending a duo of light and white Caribbean rums from
+                            Martinique and Dominican Republic as&nbsp;the smooth
+                            base. Spices are then added and the mix is allowed to
+                            steep for 2 days to draw out all of the flavour before
+                            being filtered and masterfully blended with natural
+                            distillates to 10%ABV. The result is a buttery,
+                            caramel-forward, savoury and spicy light spirit with a
+                            big impact both on the nose and the taste buds..</p>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label"><strong>Taste</strong></div>
+                    <div class="content">
+                        <p>Deep bonfire toffee,&nbsp;warming savoury spice, rounded
+                            honey sweetness, buttery caramel throughout with a hint of
+                            tropical fruit.</p>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label"><strong>Serve</strong></div>
+                    <div class="content">
+                        <p>LSimply serve 50ml chilled over ice with 150ml premium
+                            Ginger Ale and a lime wedge. 2.3% ABV.</p>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
+ 
+  
       </div>
-
-      <div class="content">
-        <h1>This is the main content of the page.</h1>
-      </div>
-
+   
       <div class="overlay">
-        <p>This is the content of the About Us section.</p>
+        <div class="menu-item-container"><h1 class="heading" style="font-family: Lato;">LONDON DRY <span style="font-family: cursive; font-weight: 300;">made with </span><span>British Gin</span></h1></div>
+        <div class="menu-item-container"><h1 class="heading" style="font-family: Lato;">LONDON DRY <span style="font-family: cursive; font-weight: 300;">made with </span><span>British Gin</span></h1></div>
+        <div class="menu-item-container"><h1 class="heading" style="font-family: Lato;">LONDON DRY <span style="font-family: cursive; font-weight: 300;">made with </span><span>British Gin</span></h1></div>
       </div>
     </header>
+    <div class="radio-container">
+      <input
+        type="radio"
+        name="image"
+        value="https://decemdrinks.com/cdn/shop/products/SpicedBlend_Serve_1024x1024.png?v=1659602678"
+                checked
+      />
+      <input
+        type="radio"
+        name="image"
+        value="https://decemdrinks.com/cdn/shop/products/SpicedBlend_Front_1024x1024.png?v=1659602678"
+      />
+      <input
+        type="radio"
+        name="image"
+        value="https://decemdrinks.com/cdn/shop/products/SpicedBlend_Back_1024x1024.png?v=1659602678"
+      />
+    </div>
+
+    <!-- CART -->
+    <div class="list">
+            
+    </div>
+    <div class="card">
+        <h1>Basket</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            
+            <div class="total"> 0</div>
+            <div class="closeShopping"><a href="#" class="myButton">Checkout</a></div>
+        </div>
+    </div>
   </body>
-  <script src="script.js"></script>
+  <script src="./Script.js"></script>
 </html>
